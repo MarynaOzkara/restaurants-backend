@@ -19,10 +19,10 @@ import { createRestaurantDto } from './dto/create-restautant.dto';
 import { updateRestaurantDto } from './dto/update-restaurant.dto';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { AuthGuard } from '@nestjs/passport';
-import { CurrentUser } from 'src/auth/decorators/current-user.decorator';
-import { User } from 'src/auth/schemas/user.shema';
+import { CurrentUser } from '../auth/decorators/current-user.decorator';
+import { User } from '../auth/schemas/user.shema';
 import { RolesGuard } from 'src/auth/guards/roles.guard';
-import { Roles } from 'src/auth/decorators/roles.decorator';
+import { Roles } from '../auth/decorators/roles.decorator';
 // import { ApiBody, ApiOperatquery?: unknownquery: unknownion, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 // @ApiTags('Restaurants')
